@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Samuel García Navarro
+name: Drupalízate
 
 # Short bio or description (displayed in the header)
-description: Web Developer Drupal 8
+description: Blog donde expresaré distintos tips a modo de documentación propia de programación sobre todo orientada a Drupal. Si de paso le puede servir a alguien más pues mejor.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: /images/logo_drupal.png
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: saganakat@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: saganakat/saganakat.github.io
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/samuel-garc%C3%ADa-navarro/
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
