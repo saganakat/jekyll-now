@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
+### Más Información Sobre Mi
 
-Some information about you!
+![Samuel](https://github.com/accounthttps://avatars1.githubusercontent.com/u/17417948?s=400&v=4)
 
-### More Information
+Actualmente estoy como programador backend y Site-building en proyectos de Drupal 8. Amante de las nuevas tecnologías
 
-A place to include any other types of information that you'd like to include about yourself.
+### Contáctame
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[saganakat@gmail.com](mailto:saganakat@gmail.com)
