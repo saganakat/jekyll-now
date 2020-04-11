@@ -12,7 +12,7 @@ categories:
 comments: true
 visible: 1
 ---
-![storage](/images/Xdebug_Logo.svg.jpg)
+![storage](/images/Xdebug_Logo.svg.png)
 
 Buenas a tod@s l@s que puedan estar leyendo este cachito de Internet.
 
@@ -36,7 +36,7 @@ El contenedor web levantado por DDEV por defecto viene con Xdebug desactivado, p
 
 Para configurar VScode necesitamos realizar los siguientes pasos :
 
-1. Instalar la extensión [php-debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) 
+1. Instalar la extensión [php-debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 
 2. Añadir al archivo de configuración 'launch.json' el siguiente fragmento de configuración:
 
@@ -66,7 +66,7 @@ Para configurar VScode necesitamos realizar los siguientes pasos :
 
    Donde:
 
-   - **pathMappings**: Aquí es donde se realiza el mapeo en el cual se indica que el path *`/var/www/html`* de DDEV, 'apunta' hacia la carpeta donde tenemos nuestro proyecto *`/home/user/projects/project_name`* 
+   - **pathMappings**: Aquí es donde se realiza el mapeo en el cual se indica que el path *`/var/www/html`* de DDEV, 'apunta' hacia la carpeta donde tenemos nuestro proyecto *`/home/user/projects/project_name`*
    - **stopOnEntry**: Si ponemos a *true* esta variable, al iniciar la depuración parará siempre en el primer punto de inicio de nuestro proyecto.
 
 Una vez configurado nuestro IDE, tocaría por último configurar nuestro navegador, el cual tendremos que instalar una extensión para habilitar/deshabilitar la depuración y el rastreo fácilmente. Yo suelo usar la extensión [Xdebug helper](https://addons.mozilla.org/es/firefox/addon/xdebug-helper-for-firefox/?src=search) la cual puedo activar y desactivar fácilmente con un click.

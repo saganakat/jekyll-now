@@ -29,20 +29,44 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">Sobre mí</a>
+            <a href="{{ site.baseurl }}/about">Sobre mi  </a>
+            <input type="text" id="search-input" placeholder="Buscar Articulo...">&nbsp;
+            <br/>
+            <div id="results-container" style="border: 2px solid black"></div>
           </nav>
+          <script type="text/javascript" src="/simple-jekyll-search.js"></script>
+          <script src="{{ site.baseurl }}/simple-jekyll-search.js"></script>
         </header>
       </div>
     </div>
+
+    <script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
+<!--     <div class="disqus">
+        {% include disqus.html %}
+    </div> -->
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+
+          <script type="text/javascript">
+            SimpleJekyllSearch({
+              searchInput: document.getElementById('search-input'),
+              resultsContainer: document.getElementById('results-container'),
+              json: 'search.json',
+              searchResultTemplate: '<a href="{url}" title="{desc}">{title}</a></br>',
+              noResultsText: 'No se han encontrado resultados.',
+              limit: 10,
+              fuzzy: false,
+              exclude: ['Welcome']
+            })
+        </script>
+
         </footer>
       </div>
     </div>
