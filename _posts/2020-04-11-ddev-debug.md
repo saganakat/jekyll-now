@@ -40,34 +40,35 @@ Para configurar VScode necesitamos realizar los siguientes pasos :
 
 2. Añadir al archivo de configuración 'launch.json' el siguiente fragmento de configuración:
 
-   ```json
-   {
-     // Use IntelliSense to learn about possible attributes.
-     // Hover to view descriptions of existing attributes.
-     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-     "version": "0.2.0",
-     "configurations": [
-       {
-         "name": "Listen for XDebug",
-         "type": "php",
-         "request": "launch",
-         "port": 9000,
-         "pathMappings": {
-           "/var/www/html": "/home/user/projects/project_name"
-         },
-         "stopOnEntry": false,
-         "log": false,
-         "xdebugSettings": {
-           "max_children": 100,
-           "max_depth": 5
-         }
-       },
-     ]
-   }```
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "pathMappings": {
+        "/var/www/html": "/home/user/projects/project_name"
+      },
+      "stopOnEntry": false,
+      "log": false,
+      "xdebugSettings": {
+        "max_children": 100,
+        "max_depth": 5
+      }
+    },
+  ]
+}
+```
 
-   Donde:
-   - **pathMappings**: Aquí es donde se realiza el mapeo en el cual se indica que el path *`/var/www/html`* de DDEV, 'apunta' hacia la carpeta donde tenemos nuestro proyecto *`/home/user/projects/project_name`*
-   - **stopOnEntry**: Si ponemos a *true* esta variable, al iniciar la depuración parará siempre en el primer punto de inicio de nuestro proyecto.
+Donde:
+- **pathMappings**: Aquí es donde se realiza el mapeo en el cual se indica que el path *`/var/www/html`* de DDEV, 'apunta' hacia la carpeta donde tenemos nuestro proyecto *`/home/user/projects/project_name`*
+- **stopOnEntry**: Si ponemos a *true* esta variable, al iniciar la depuración parará siempre en el primer punto de inicio de nuestro proyecto.
 
 Una vez configurado nuestro IDE, tocaría por último configurar nuestro navegador, el cual tendremos que instalar una extensión para habilitar/deshabilitar la depuración y el rastreo fácilmente. Yo suelo usar la extensión [Xdebug helper](https://addons.mozilla.org/es/firefox/addon/xdebug-helper-for-firefox/?src=search) la cual puedo activar y desactivar fácilmente con un click.
 
