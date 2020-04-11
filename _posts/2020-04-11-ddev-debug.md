@@ -30,7 +30,7 @@ Pero un momento espera D que..? DDEV es una herramienta de desarrollo de código
 
 ### Configuración DDEV
 
-El contenedor web levantado por DDEV por defecto viene con Xdebug desactivado, por lo que nuestro primer paso será activarlo. Para ello podemos hacerlo a través de dos vías, cambiando la variable `xdebug_enabled` del archivo *config.yaml* del path .ddev a true, o ejecutando los comandos `ddev exec enable_xdebug` y `ddev exec disable_xdebug`  para activarlo y desactivarlo a petición. De la primera forma siempre tendremos activo xdebug cada vez que iniciemos DDEV con `ddev start`. De la segunda manera cada vez que queramos depurar nuestro código tendremos que ejecutar el comando para activar xdebug.
+El contenedor web levantado por DDEV por defecto viene con Xdebug desactivado, por lo que nuestro primer paso será activarlo. Para ello podemos hacerlo a través de dos vías, cambiando la variable `xdebug_enabled` del archivo *config.yaml* del path .ddev de tu proyecto a true, o ejecutando los comandos `ddev exec enable_xdebug` y `ddev exec disable_xdebug`  para activarlo y desactivarlo a petición. De la primera forma siempre tendremos activo xdebug cada vez que iniciemos DDEV con `ddev start`. De la segunda manera cada vez que queramos depurar nuestro código tendremos que ejecutar el comando para activar xdebug.
 
 ### Configuración VScode
 
@@ -40,7 +40,8 @@ Para configurar VScode necesitamos realizar los siguientes pasos :
 
 2. Añadir al archivo de configuración 'launch.json' el siguiente fragmento de configuración:
 
-   `{
+   ```json
+   {
      // Use IntelliSense to learn about possible attributes.
      // Hover to view descriptions of existing attributes.
      // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -62,10 +63,9 @@ Para configurar VScode necesitamos realizar los siguientes pasos :
          }
        },
      ]
-   }`
+   }```
 
    Donde:
-
    - **pathMappings**: Aquí es donde se realiza el mapeo en el cual se indica que el path *`/var/www/html`* de DDEV, 'apunta' hacia la carpeta donde tenemos nuestro proyecto *`/home/user/projects/project_name`*
    - **stopOnEntry**: Si ponemos a *true* esta variable, al iniciar la depuración parará siempre en el primer punto de inicio de nuestro proyecto.
 
